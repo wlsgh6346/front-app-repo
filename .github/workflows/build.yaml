@@ -47,6 +47,6 @@ jobs:
         run: |
           echo "::set-output name=ecr_repository::$ECR_REPOSITORY"
           echo "::set-output name=image_tag::$IMAGE_TAG"
-          docker build -t docker push 214894679680.dkr.ecr.us-east-1.amazonaws.com/demo-frontend:latest\:$IMAGE_TAG .
-          docker push docker push 214894679680.dkr.ecr.us-east-1.amazonaws.com/demo-frontend:latest\:$IMAGE_TAG
+          docker build -t 214894679680.dkr.ecr.us-east-1.amazonaws.com/demo-frontend:latest\:$IMAGE_TAG .
+          docker push 214894679680.dkr.ecr.us-east-1.amazonaws.com/demo-frontend:latest\:$IMAGE_TAG
 
